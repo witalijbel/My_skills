@@ -1,0 +1,71 @@
+1) Посмотреть где я - pwd
+Посмотреть где я - echo $PWD
+2) Создать папку - mkdir loto
+3) Зайти в папку - cd loto
+4) Создать 3 папки -  mkdir {pole,leto,kola}
+5) Зайти в любую папку
+witalij@DESKTOP-OHVQ3F6:~$ cd /home/witalij/leto
+6) Создать 5 файлов (3 txt, 2 json)
+cat > tuman1.txt
+cat > more.txt
+echo "priroda" > tortik.json
+echo > surikat.json
+7) Создать 3 папки
+witalij@DESKTOP-OHVQ3F6:~/leto$ mkdir {skoro,budet,leto2021}
+8. Вывести список содержимого папки
+witalij@DESKTOP-OHVQ3F6:~/leto$ ls
+budet  leto2021  more.txt  skoro  surikat.json  tortik.json  tuman1.txt  wolna2.txt
+9) + Открыть любой txt файл
+witalij@DESKTOP-OHVQ3F6:~/leto$ vim more.txt
+10) + написать туда что-нибудь, любой текст
+123
+321
+krevetka
+to.ke.345
+11) + сохранить и выйти. 
+:wq
+10) + написать туда что-нибудь, любой текст 
+witalij@DESKTOP-OHVQ3F6:~/leto$ nano more.txt
+witalij@DESKTOP-OHVQ3F6:~/leto$ cat more.txt
+123
+
+321
+krevetka
+to.ke.345
+rudejflkdfs
+dskifjdi2134
+11) ctrl+o enter ctrl+x
+12) Выйти из папки на уровень выше
+ cd -
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+ mv /home/witalij/leto/{wolna2.txt,tortik.json} /home/witalij/kola/
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+ cp /home/witalij/leto/{more.txt,surikat.json} /home/witalij/pole/
+15) Найти файл по имени
+find /home/witalij/ -name "more.txt"
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+tail -f /home/witalij/leto/more.txt| grep 123
+17) вывести несколько первых строк из текстового файла
+grep -A2 "123" /home/witalij/leto/more.txt
+18) вывести несколько последних строк из текстового файла
+grep -B2 "to.ke.345" /home/witalij/leto/more.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less -s /home/witalij/leto/more.txt
+20) вывести дату и время
+date
+1) Отправить http запрос на сервер.
+https://api.quarantine.country/api/v1/regions
+curl -s -o /dev/null -w "%{http_code}" https://api.quarantine.country/api/v1/regions
+получили ответ 200
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+# !/bin/bash
+string=  mkdir {skoro,budet,leto2021}
+echo $string
+# !/bin/bash
+string= cat > tuman1.txt
+echo $string
+# !/bin/bash
+string= ls
+echo $string
+
+
