@@ -27,9 +27,6 @@ to.ke.345
 10) + написать туда что-нибудь, любой текст 
 witalij@DESKTOP-OHVQ3F6:~/leto$ nano more.txt
 witalij@DESKTOP-OHVQ3F6:~/leto$ cat more.txt
-123
-
-321
 krevetka
 to.ke.345
 rudejflkdfs
