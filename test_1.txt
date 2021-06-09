@@ -17,8 +17,7 @@ witalij@DESKTOP-OHVQ3F6:~/leto$ ls
 budet  leto2021  more.txt  skoro  surikat.json  tortik.json  tuman1.txt  wolna2.txt
 9) + Открыть любой txt файл
 witalij@DESKTOP-OHVQ3F6:~/leto$ vim more.txt
-10) + написать туда что-нибудь, любой текст
-123
+10) + написать туда что-нибудь, любой тii
 321
 krevetka
 to.ke.345

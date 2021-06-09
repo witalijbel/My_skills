@@ -1,0 +1,7 @@
+# !/bin/bash
+ cd /c/Users/Виталий/Git
+ mkdir {pole,leto,kola}
+ vim {tom.txt,mot.txt}
+ ls -la
+
+
